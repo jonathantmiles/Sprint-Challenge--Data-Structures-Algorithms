@@ -16,6 +16,10 @@ Each time through the loop only removes one (-1) from the bunnies value, but it 
 
 === PART II ===
 
+For testing with the fewest broken eggs:
 for each floor (starting at the first floor _n_ = 0) throw an egg out the window.
 if the egg does not break, repeat with the floor next higher up (_n_ + 1)
 the first time the egg breaks, record that the previous floor (the current _n_ - 1) is equal to _f_ (the highest floor from which eggs do not break)
+
+For testing the fewest number of eggs overall (and ignoring that _f_ is likely to be very low, assuming real-world physics):
+toss the egg off at _n_/2, the halfway point of the building. If it breaks, check that floor divided by 2 (to get lower) otherwise check halfway between the halfway point and the top of the building. The idea is to always check halfway, then go lower if need be, or higher if need be, getting closer and closer to the final output (just like in a guessing game where you're told if the target number is higher or lower than your guess).

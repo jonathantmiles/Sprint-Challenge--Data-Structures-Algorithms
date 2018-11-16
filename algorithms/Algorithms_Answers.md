@@ -13,3 +13,9 @@ Each of the first three loops runs one fewer time than its container, starting w
 c) the algorithm will run 'bunnies' + 1 times
 
 Each time through the loop only removes one (-1) from the bunnies value, but it runs a final time when bunnies == 0.
+
+=== PART II ===
+
+for each floor (starting at the first floor _n_ = 0) throw an egg out the window.
+if the egg does not break, repeat with the floor next higher up (_n_ + 1)
+the first time the egg breaks, record that the previous floor (the current _n_ - 1) is equal to _f_ (the highest floor from which eggs do not break)
